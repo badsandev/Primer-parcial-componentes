@@ -1,4 +1,4 @@
-package com.taller.parcial.model.data
+package com.taller.parcial.data
 import com.taller.parcial.model.Cliente
 import androidx.room.Entity
 import androidx.room.PrimaryKey

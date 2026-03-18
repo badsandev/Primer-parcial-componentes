@@ -1,4 +1,4 @@
-package com.taller.parcial.model.data
+package com.taller.parcial.data
 
 import androidx.room.*
 import kotlinx.coroutines.flow.Flow

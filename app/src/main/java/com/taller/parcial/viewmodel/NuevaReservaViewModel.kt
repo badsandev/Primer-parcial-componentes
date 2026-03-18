@@ -6,7 +6,7 @@ import androidx.lifecycle.viewModelScope
 import com.taller.parcial.model.Cliente
 import com.taller.parcial.model.EstadoReserva
 import com.taller.parcial.model.Reserva
-import com.taller.parcial.model.data.GolfRepository
+import com.taller.parcial.data.GolfRepository
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
 import java.text.SimpleDateFormat
