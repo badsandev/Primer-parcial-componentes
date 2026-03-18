@@ -3,7 +3,7 @@ package com.taller.parcial.viewmodel
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.taller.parcial.model.ReservaConCliente
-import com.taller.parcial.data.GolfRepository
+import com.taller.parcial.data.GolfRepositoryImpl
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
 
@@ -15,7 +15,7 @@ data class ReservasUiState(
     val error: String? = null
 )
 
-class ReservasViewModel(private val repository: GolfRepository) : ViewModel() {
+class ReservasViewModel(private val repository: GolfRepositoryImpl) : ViewModel() {
 
     private val _uiState = MutableStateFlow(ReservasUiState())
     val uiState: StateFlow<ReservasUiState> = _uiState.asStateFlow()

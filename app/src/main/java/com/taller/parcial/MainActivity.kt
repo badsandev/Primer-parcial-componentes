@@ -5,7 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import com.taller.parcial.data.GolfDatabase
-import com.taller.parcial.data.GolfRepository
+import com.taller.parcial.data.GolfRepositoryImpl
 import com.taller.parcial.ui.GolfNavGraph
 import com.taller.parcial.ui.theme.GolfClubTheme
 
@@ -16,7 +16,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
 
         val database   = GolfDatabase.getInstance(applicationContext)
-        val repository = GolfRepository(
+        val repository = GolfRepositoryImpl(
             clienteDao = database.clienteDao(),
             reservaDao = database.reservaDao()
         )

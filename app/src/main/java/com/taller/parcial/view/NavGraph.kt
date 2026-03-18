@@ -6,7 +6,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
-import com.taller.parcial.data.GolfRepository
+import com.taller.parcial.data.GolfRepositoryImpl
 import com.taller.parcial.view.DashboardScreen
 import com.taller.parcial.viewmodel.DashboardViewModel
 import com.taller.parcial.viewmodel.NuevaReservaViewModel
@@ -21,7 +21,7 @@ object Routes {
 }
 
 @Composable
-fun GolfNavGraph(repository: GolfRepository) {
+fun GolfNavGraph(repository: GolfRepositoryImpl) {
     val navController = rememberNavController()
 
     NavHost(navController = navController, startDestination = Routes.DASHBOARD) {
