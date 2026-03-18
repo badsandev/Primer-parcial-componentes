@@ -1,4 +1,4 @@
-package com.taller.parcial.model.data
+package com.taller.parcial.data
 
 import android.content.Context
 import androidx.room.Database

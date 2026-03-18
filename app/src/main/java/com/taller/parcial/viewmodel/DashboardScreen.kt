@@ -3,7 +3,7 @@ package com.taller.parcial.viewmodel
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.taller.parcial.model.ReservaConCliente
-import com.taller.parcial.model.data.GolfRepository
+import com.taller.parcial.data.GolfRepository
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
 
